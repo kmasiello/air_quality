@@ -22,7 +22,9 @@ library(ggplot2)
 library(gt)
 ```
 
-Build the API query URL
+# Get Air Quality readings
+
+## Build the API query URL
 
 ```{r}
 base_url <- "https://www.airnowapi.org/aq/data/"
@@ -58,7 +60,7 @@ url_sansKey <- paste(paste0(base_url,"?",
              
 ```
 
-# Query the API
+## Query the API
 ```{r}
 # column names
 cols <- c("Latitude", "Longitude", "UTC", "Pollutant",
@@ -70,7 +72,7 @@ cols <- c("Latitude", "Longitude", "UTC", "Pollutant",
 
 ```
 
-# explore
+# Explore results
 The `scan_data()` function creates a thorough summary report of the data.  
 ```{r}
 # takes about 30s to run...
@@ -79,7 +81,9 @@ The `scan_data()` function creates a thorough summary report of the data.
 
 # Data Validation
 
-## Define basic rules for data quality to ensure import assumptions are valid
+## Column Schema Verification
+
+### Define basic rules for data quality to ensure import assumptions are valid
 Since the data is coming in without column headers, let's establish a column schema to validate that the data conforms to what I'm expecting. 
 ```{r}
 # Define a column schema so we can check inputted data is as expected
@@ -103,8 +107,10 @@ agent <- create_agent(response) %>% col_schema_match(schema_aqi_table, is_exact 
 all_passed(agent)
 ```
 
-# Does the data make sense?
-We can do basic checks on the columns
+## Data in-range validation
+
+### Does the data make sense?
+We can do basic checks on the columns to ensure the values are valid
 ```{r}
 # define another agent with col_vals_* functions
 agent <- response %>% 
@@ -129,34 +135,11 @@ clean_response <- get_sundered_data(agent, type = "pass") %>%
 fail_response <- get_sundered_data(agent, type = "fail")
 ```
 
-# Define some alerts
-Is air quality unhealthy?  Email me if air quality index is over a specific threshold.
-```{r}
-threshold <- 50
-(agent_aqi <- clean_response %>% create_agent() %>% 
-  col_vals_lte(vars(AQI), value = threshold) %>% interrogate())
-```
-
-```{r}
-bad_air <- get_sundered_data(agent_aqi, type = "fail")
-good_air <- get_sundered_data(agent_aqi, type = "pass")
-
-# pin the bad air and all station data
-board <- board_rsconnect()
-pin_write(board, bad_air, "aqi_exceeding_stations", type="csv")
-pin_write(board, clean_response, "aqi_readings")
-
-# prune to last 45 days
-pin_versions_prune(board, "katie.masiello/aqi_exceeding_stations", days = 30)
-
-```
-
-
 # Snapshot of AQI trend for station with highest reading
 ```{r}
 #Historical readings at worst site
 
-tbl <- response %>% select(Site_Name, UTC, AQI) %>% 
+tbl <- clean_response %>% select(Site_Name, UTC, AQI) %>% 
   arrange(desc(AQI)) %>% filter(Site_Name == first(Site_Name))
 
 site_plot <- ggplot(tbl, aes(x = UTC, y = AQI)) + 
@@ -168,7 +151,33 @@ site_plot
 ```
 
 
-# Create the informant table
+# Define some alerts
+Is air quality unhealthy?  Email me if air quality index is over a specific threshold.
+
+```{r}
+threshold <- 50
+(agent_aqi <- clean_response %>% create_agent() %>% 
+  col_vals_lte(vars(AQI), value = threshold) %>% interrogate())
+
+bad_air <- get_sundered_data(agent_aqi, type = "fail")
+good_air <- get_sundered_data(agent_aqi, type = "pass")
+
+```
+
+# Pin data for use by other assets 
+```{r}
+# pin the bad air and all station data
+board <- board_rsconnect()
+pin_write(board, bad_air, "aqi_exceeding_stations", type="csv")
+pin_write(board, clean_response, "aqi_readings")
+
+# prune to last 45 days
+pin_versions_prune(board, "katie.masiello/aqi_exceeding_stations", days = 45)
+pin_versions_prune(board, "katie.masiello/aqi_readings", days = 45)
+```
+
+
+# Create the informant table / Data Dictionary
 ```{r echo = FALSE, message = FALSE}
 
 pollutants <- unique(good_air$Pollutant)
@@ -200,6 +209,7 @@ pollutants <- unique(good_air$Pollutant)
    ) %>% incorporate()
 ```
 
+# Generate email
 
 ```{r}
 
@@ -219,7 +229,7 @@ attach_connect_email(email, subject = "Good air report")
 ```
 
 
-# Log it
+# Logging information
 Very simplistic log of date and data sent:
 ```{r}
 
@@ -227,7 +237,7 @@ glue("Report run {blastula::add_readable_time()}
       {xlist$n_failed} readings exceeded threshold of {threshold} in the last {timespan} hours. ")
 ```
 
-# Email that was sent:
+## Email that was sent:
 ```{r results = "asis", echo=FALSE}
 email$html_html 
 ```
