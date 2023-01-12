@@ -59,10 +59,10 @@ server <- function(input, output, session) {
         lat = ~Latitude,
         layerId = ~Site_Name,
         icon = awesomeIcons(
-          "house",
+          "circle",
           library = "fa",
           iconColor = "white",
-          markerColor = "red"
+          markerColor = "cadetblue"
         ),
         label = ~paste0(Site_Name)
       )
