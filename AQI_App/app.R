@@ -25,7 +25,7 @@ aqi_info <- pins::pin_read(
 # ////////////////////////////////////////////////////////////////////////////
 ui <- dashboardPage(
   skin = "blue",
-  dashboardHeader(title = "Washington Air Quality"),
+  dashboardHeader(title = "Seattle Area Air Quality"),
   dashboardSidebar(disable = TRUE),
   dashboardBody(
     box(title = "Site Name",
