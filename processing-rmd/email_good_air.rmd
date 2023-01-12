@@ -5,10 +5,16 @@ editor_options:
   chunk_output_type: console
 ---
 
-Breathe easy!  AQI measurements are all good for `r nrow(good_air)` measurements.
+Breathe easy! AQI measurements are all good for `r nrow(good_air)` measurements.
 
+![[^1]](blue_skies.jpeg){width="225"}
 
-A sample of the most recent readings from 6 random sites:  
+[^1]: Photo by <a href="https://unsplash.com/@frostroomhead">Rodion Kutsaiev</a> on <a href="https://unsplash.com/images/nature/cloud">Unsplash</a>
+  
+
+comprehensive view of local air quality, see the [Air Quality Dashboard](https://colorado.posit.co/rsc/aqi_dashboard/).
+
+A sample of the most recent readings from 6 random sites:
 
 ```{r echo=FALSE}
 most_recent <- good_air %>% 
@@ -41,28 +47,21 @@ ggplot(sample_readings, aes(fill = color, ymax = AQI/350, ymin = 0, xmax = 2, xm
 suppressMessages(library(gt))
 ```
 
-The highest reading over the last `r timespan` hours is from the **`r tbl$Site_Name[1]`** site. This peak reading was **`r tbl$AQI[1]`**.  
+The highest reading over the last `r timespan` hours is from the **`r tbl$Site_Name[1]`** site. This peak reading was **`r tbl$AQI[1]`**.
 
- 
-Here's the trend at that site:  
+Here's the trend at that site:
 
 ```{r echo=FALSE}
 site_plot
 ```
 
-
-
-Here's a summary of the 20 highest readings over the last `r timespan` hours:
+Here's a summary of the highest readings over the last `r timespan` hours from each site:
 
 ```{r echo=FALSE}
 good_air %>% select(Site_Name, AQI, Pollutant, Concentration, Unit) %>% 
+  group_by(Site_Name) %>% 
   arrange(desc(AQI)) %>% 
-  head(20) %>% 
-  group_by(Site_Name) %>% gt(rowname_col = "Pollutant") %>% 
-  summary_rows(groups = TRUE, columns = c("AQI", "Concentration"), 
-               fns = list(avg = ~mean(.))) %>% as_raw_html() 
-
+  slice(1) %>% 
+  ungroup() %>%
+  gt() 
 ```
-
-
-`r xlist$report_html`

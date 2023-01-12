@@ -10,12 +10,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-Mask up! There's some bad air out there, baby.  Air quality index exceeds `r threshold` for `r nrow(bad_air)` readings.  These are taken over the last `r timespan` hours. See the summary agent below.  
+Mask up! There's some bad air out there, baby.  Air quality index exceeds `r threshold` for **`r nrow(bad_air)` readings**.  These are taken over the last `r timespan` hours. 
 
-```{r echo=FALSE}
-suppressMessages(library(gt))
-xlist$report_html
-```
+![[^1]](hazy.jpeg){width="225"}
+
+[^1]: Photo by <a href="https://unsplash.com/@glenna1984">Glenn Abelson</a> on <a href="https://unsplash.com/photos/Hwz4MZjzxTM">Unsplash</a>
+  
+
+For a comprehensive view of local air quality, see the [Air Quality Dashboard](https://colorado.posit.co/rsc/aqi_dashboard/).
 
 
 
@@ -29,7 +31,8 @@ most_recent <- bad_air %>%
 num_sites <- nrow(most_recent)
 sample_size <- min(num_sites, 6)
 ```
-A sample of the most recent readings from `r sample_size` random sites:  
+
+A sample of the most recent readings from `r sample_size` random site(s) that exceed the threshold:  
 
 ```{r echo=FALSE}
 sample_readings <- most_recent %>% sample_n(sample_size)
@@ -62,34 +65,17 @@ site_plot
 ```
 
 
-Here are top 30 highest readings:  
+Here's a summary of the highest readings over the last `r timespan` hours from each site:
 
 ```{r echo=FALSE}
+
 bad_air %>% select(Site_Name, AQI, Pollutant, Concentration, Unit) %>% 
+  group_by(Site_Name) %>% 
   arrange(desc(AQI)) %>% 
-  head(30) %>% 
-  group_by(Site_Name) %>% gt(rowname_col = "Pollutant") %>% 
-  summary_rows(groups = TRUE, columns = c("AQI", "Concentration"), 
-               fns = list(avg = ~mean(.))) %>% as_raw_html() 
+  slice(1) %>% 
+  ungroup() %>%
+  gt() 
 
 ```
 
-
-```{r echo=FALSE}
-# library(reactable)
-# 
-# summary_tbl <- bad_air %>% select(Site_Name, AQI, Pollutant, Concentration, Unit) %>% arrange(desc(AQI))
-# 
-# reactable(summary_tbl, groupBy = c("Site_Name", "Pollutant"),
-#           defaultSorted = c("AQI"),
-#            minRows = 15, searchable = TRUE,
-#           columns = list(
-#             Site_Name = colDef(), 
-#             AQI = colDef(aggregate = "mean", format = colFormat(digits = 0)),
-#             Pollutant = colDef(aggregate = "unique"), 
-#             Concentration = colDef(aggregate = "mean", format = colFormat(digits = 0)), 
-#             Unit = colDef()
-#           ))
-
-```
 
