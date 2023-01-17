@@ -216,13 +216,13 @@ pollutants <- unique(good_air$Pollutant)
 xlist <- agent_aqi %>% get_agent_x_list()
 
 if(nrow(bad_air) > 0){
-email <- render_connect_email("email_bad_air.rmd") 
-
-attach_connect_email(email, subject = "Air Quality Alert - it's bad out there")
+  email <- render_connect_email("email_bad_air.rmd") 
+  
+  attach_connect_email(email, subject = "Air Quality Alert - it's bad out there")
 } else {
   email <- render_connect_email("email_good_air.rmd")
   
-attach_connect_email(email, subject = "Good air report")
+  attach_connect_email(email, subject = "Good air report")
 }
 
 
