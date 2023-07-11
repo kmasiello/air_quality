@@ -48,15 +48,15 @@ nowcastonly <- "nowcastonly=1"
 includeRaw <- "includerawconcentrations=1"
 
 url_sansKey <- paste(paste0(base_url,"?",
-                    startDate),
-             endDate,
-             parameters,
-             boundingBox,
-             dataType,
-             format,
-             verbose,
-             nowcastonly,
-             includeRaw,sep="&")
+                            startDate),
+                     endDate,
+                     parameters,
+                     boundingBox,
+                     dataType,
+                     format,
+                     verbose,
+                     nowcastonly,
+                     includeRaw,sep="&")
              
 ```
 
@@ -68,7 +68,9 @@ cols <- c("Latitude", "Longitude", "UTC", "Pollutant",
           "AQI", "Category", "Site_Name", "Site_Agency", 
           "AQS_ID", "Full_AWS_ID")
 
-(response <- GET(paste0(url_sansKey,"&",paste0("API_KEY=",Sys.getenv("AIRNOW_API_KEY")))) %>% content(col_names = FALSE) %>% setNames(cols))
+(response <- 
+    GET(paste0(url_sansKey,"&",paste0("API_KEY=",Sys.getenv("AIRNOW_API_KEY")))) %>%
+    content(col_names = FALSE) %>% setNames(cols))
 
 ```
 
@@ -103,7 +105,10 @@ schema_aqi_table <- col_schema(Latitude = "numeric",
 ```
 
 ```{r validate = TRUE}
-agent <- create_agent(response) %>% col_schema_match(schema_aqi_table, is_exact = FALSE) %>% interrogate() 
+agent <- create_agent(response) %>% 
+  col_schema_match(schema_aqi_table, is_exact = FALSE) %>% 
+  interrogate() 
+
 all_passed(agent)
 ```
 
@@ -118,6 +123,7 @@ agent <- response %>%
   col_vals_between(vars(AQI), left = 0, right = 500) %>% 
   col_vals_gte(vars(Concentration, Raw_Concentration), value = 0) %>% 
   interrogate()
+
 agent
 ```
 
@@ -132,6 +138,7 @@ clean_response <- get_sundered_data(agent, type = "pass") %>%
     dplyr::between(AQI, 201, 300) ~ "purple", 
     dplyr::between(AQI, 301, Inf) ~ "maroon"
     ))
+
 fail_response <- get_sundered_data(agent, type = "fail")
 ```
 
@@ -139,8 +146,10 @@ fail_response <- get_sundered_data(agent, type = "fail")
 ```{r}
 #Historical readings at worst site
 
-tbl <- clean_response %>% select(Site_Name, UTC, AQI) %>% 
-  arrange(desc(AQI)) %>% filter(Site_Name == first(Site_Name))
+tbl <- clean_response %>% 
+  select(Site_Name, UTC, AQI) %>% 
+  arrange(desc(AQI)) %>% 
+  filter(Site_Name == first(Site_Name))
 
 site_plot <- ggplot(tbl, aes(x = UTC, y = AQI)) + 
   geom_step(color = "#219ebc") + 
@@ -156,8 +165,10 @@ Is air quality unhealthy?  Email me if air quality index is over a specific thre
 
 ```{r}
 threshold <- 50
-(agent_aqi <- clean_response %>% create_agent() %>% 
-  col_vals_lte(vars(AQI), value = threshold) %>% interrogate())
+(agent_aqi <- clean_response %>% 
+    create_agent() %>% 
+    col_vals_lte(vars(AQI), value = threshold) %>% 
+    interrogate())
 
 bad_air <- get_sundered_data(agent_aqi, type = "fail")
 good_air <- get_sundered_data(agent_aqi, type = "pass")
@@ -213,8 +224,6 @@ pollutants <- unique(good_air$Pollutant)
 
 ```{r}
 
-xlist <- agent_aqi %>% get_agent_x_list()
-
 if(nrow(bad_air) > 0){
   email <- render_connect_email("email_bad_air.rmd") 
   
@@ -232,6 +241,7 @@ if(nrow(bad_air) > 0){
 # Logging information
 Very simplistic log of date and data sent:
 ```{r}
+xlist <- agent_aqi %>% get_agent_x_list()
 
 glue("Report run {blastula::add_readable_time()} 
       {xlist$n_failed} readings exceeded threshold of {threshold} in the last {timespan} hours. ")
