@@ -78,7 +78,8 @@ cols <- c("Latitude", "Longitude", "UTC", "Pollutant",
 The `scan_data()` function creates a thorough summary report of the data.  
 ```{r}
 # takes about 30s to run...
-# scan_data(response)
+scan <- scan_data(response, sections = "OVMS")
+scan
 ```
 
 # Data Validation
