@@ -2905,10 +2905,10 @@
       "Repository": "https://colorado.rstudio.com/rspm/all/latest",
       "description": {
         "Package": "stringi",
-        "Version": "1.7.8",
-        "Date": "2022-07-11",
+        "Version": "1.7.12",
+        "Date": "2023-01-09",
         "Title": "Fast and Portable Character String Processing Facilities",
-        "Description": "A collection of character string/text/natural language\nprocessing tools for pattern searching (e.g., with 'Java'-like regular\nexpressions or the 'Unicode' collation algorithm), random string generation,\ncase mapping, string transliteration, concatenation, sorting, padding,\nwrapping, Unicode normalisation, date-time formatting and parsing,\nand many more. They are fast, consistent, convenient, and -\nthanks to 'ICU' (International Components for Unicode) -\nportable across all locales and platforms.\nDocumentation about 'stringi' is provided\nvia its website at <https://stringi.gagolewski.com/> and\nthe paper by Gagolewski (2022, <doi:10.18637/jss.v103.i02>).",
+        "Description": "A collection of character string/text/natural language\nprocessing tools for pattern searching (e.g., with 'Java'-like regular\nexpressions or the 'Unicode' collation algorithm), random string generation,\ncase mapping, string transliteration, concatenation, sorting, padding,\nwrapping, Unicode normalisation, date-time formatting and parsing,\nand many more. They are fast, consistent, convenient, and -\nthanks to 'ICU' (International Components for Unicode) -\nportable across all locales and platforms. Documentation about 'stringi' is\nprovided via its website at <https://stringi.gagolewski.com/> and\nthe paper by Gagolewski (2022, <doi:10.18637/jss.v103.i02>).",
         "URL": "https://stringi.gagolewski.com/,\nhttps://github.com/gagolews/stringi, https://icu.unicode.org/",
         "BugReports": "https://github.com/gagolews/stringi/issues",
         "SystemRequirements": "C++11, ICU4C (>= 55, optional)",
@@ -2919,13 +2919,14 @@
         "License": "file LICENSE",
         "Author": "Marek Gagolewski [aut, cre, cph] (<https://orcid.org/0000-0003-0637-6028>),\nBartek Tartanus [ctb], and others (stringi source code);\nUnicode, Inc. and others (ICU4C source code, Unicode Character Database)",
         "Maintainer": "Marek Gagolewski <marek@gagolewski.com>",
-        "RoxygenNote": "7.1.2",
+        "RoxygenNote": "7.2.1",
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
-        "Packaged": "2022-07-11 01:59:34 UTC; gagolews",
+        "Packaged": "2023-01-09 07:28:38 UTC; gagolews",
+        "License_is_FOSS": "yes",
         "Repository": "RSPM",
-        "Date/Publication": "2022-07-11 08:10:02 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-07-12 19:22:40 UTC; unix"
+        "Date/Publication": "2023-01-11 10:10:02 UTC",
+        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2023-01-12 11:12:03 UTC; unix"
       }
     },
     "stringr": {
@@ -3547,16 +3548,16 @@
   },
   "files": {
     "aqi_processing_email.html": {
-      "checksum": "0c710028608eaa247d2b04fa1b9eb7a2"
+      "checksum": "ead52df05d5a076945aabea913e8d997"
     },
     "aqi_processing.html": {
-      "checksum": "fd635ba382217de4a77c8a518b84e3cf"
+      "checksum": "04fb06a3a78a98718be1a84c2be911c2"
     },
     "aqi_processing.Rmd": {
-      "checksum": "65dcdc84c862722a21ce6df992573bdf"
+      "checksum": "43286b1f022bf7db308e385fe8705b6e"
     },
     "blastula_email.html": {
-      "checksum": "d25de4476d3b6f545b53bd585d44a658"
+      "checksum": "9f8c0356d8af358c36c8b3a038644e47"
     },
     "blue_skies.jpeg": {
       "checksum": "7018298893fa6abc4ea8bed00e103bb6"

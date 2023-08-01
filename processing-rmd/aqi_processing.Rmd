@@ -3,8 +3,13 @@ title: "Air Quality Processing and Analysis"
 author: "Katie Masiello"
 date: "2023-01-10"
 output: html_document
-editor_options: 
+editor_options:
   chunk_output_type: console
+resource_files:
+- email_bad_air.rmd
+- email_good_air.rmd
+- hazy.jpeg
+- blue_skies.jpeg
 ---
 
 ```{r setup, include=FALSE}
