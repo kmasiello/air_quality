@@ -1,0 +1,12 @@
+name: aqi_app
+title: AQI_App
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.demo.posit.team
+hostUrl: https://pub.demo.posit.team/__api__
+appId: 94
+bundleId: 342
+url: https://pub.demo.posit.team/content/9b65ba1e-872a-40df-90f3-d116964d51dc/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
