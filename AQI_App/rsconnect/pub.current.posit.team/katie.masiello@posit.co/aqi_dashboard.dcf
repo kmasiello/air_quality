@@ -1,0 +1,12 @@
+name: aqi_dashboard
+title: AQI Dashboard
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 39
+bundleId: 67
+url: https://pub.current.posit.team/content/d5022171-33b3-4770-b72f-6bb62e413006/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

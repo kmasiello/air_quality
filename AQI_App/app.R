@@ -9,14 +9,11 @@ library(leaflet)
 # ////////////////////////////////////////////////////////////////////////////
 # Setup
 # ////////////////////////////////////////////////////////////////////////////
-board <- pins::board_rsconnect(
-  server = "https://colorado.posit.co/rsc",
-  key = Sys.getenv("CONNECT_API_KEY"),
-)
+board <- pins::board_connect()
 
 aqi_info <- pins::pin_read(
   board,
-  "katie.masiello/aqi_readings"
+  "katie.masiello@posit.co/aqi_readings"
 )
 
 

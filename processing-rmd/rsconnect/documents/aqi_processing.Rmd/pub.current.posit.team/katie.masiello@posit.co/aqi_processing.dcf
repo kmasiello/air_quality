@@ -1,0 +1,11 @@
+name: aqi_processing
+title:
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+envVars: AIRNOW_API_KEY
+hostUrl: https://pub.current.posit.team/__api__
+appId: 37
+bundleId: 66
+url: https://pub.current.posit.team/content/618f6d24-03dd-4f9d-bf2a-305c83ceafc6/
+version: 1
