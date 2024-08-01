@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "jupyter-static",
+    "entrypoint": "AQI_report.ipynb"
+  },
+  "python": {
+    "version": "3.11.9",
+    "package_manager": {
+      "name": "pip",
+      "version": "24.0",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "AQI_report.ipynb": {
+      "checksum": "c6b5c58b356061c65204b9c33eb6cc5c"
+    },
+    "requirements.txt": {
+      "checksum": "6175d651249e10515322cebe4918ccf2"
+    }
+  }
+}
