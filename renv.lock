@@ -4,7 +4,7 @@
     "Repositories": [
       {
         "Name": "REPO_NAME",
-        "URL": "https://colorado.rstudio.com/rspm/all/latest"
+        "URL": "https://p3m.dev/cran/latest"
       }
     ]
   },

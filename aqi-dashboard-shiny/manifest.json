@@ -12,7 +12,7 @@
   "packages": {
     "MASS": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "MASS",
         "Priority": "recommended",
@@ -42,7 +42,7 @@
     },
     "Matrix": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Matrix",
         "Version": "1.3-4",
@@ -75,7 +75,7 @@
     },
     "R6": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "R6",
         "Title": "Encapsulated Classes with Reference Semantics",
@@ -100,7 +100,7 @@
     },
     "RColorBrewer": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "RColorBrewer",
         "Version": "1.1-3",
@@ -122,7 +122,7 @@
     },
     "Rcpp": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -148,7 +148,7 @@
     },
     "askpass": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "askpass",
         "Type": "Package",
@@ -176,7 +176,7 @@
     },
     "base64enc": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "base64enc",
         "Version": "0.1-3",
@@ -198,7 +198,7 @@
     },
     "bslib": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
@@ -229,7 +229,7 @@
     },
     "cachem": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "cachem",
         "Version": "1.0.6",
@@ -254,7 +254,7 @@
     },
     "cli": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "cli",
         "Title": "Helpers for Developing Command Line Interfaces",
@@ -282,7 +282,7 @@
     },
     "colorspace": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "colorspace",
         "Version": "2.0-3",
@@ -311,7 +311,7 @@
     },
     "commonmark": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "commonmark",
         "Type": "Package",
@@ -337,7 +337,7 @@
     },
     "crayon": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "crayon",
         "Title": "Colored Terminal Output",
@@ -363,7 +363,7 @@
     },
     "crosstalk": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "crosstalk",
         "Type": "Package",
@@ -389,7 +389,7 @@
     },
     "curl": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "curl",
         "Type": "Package",
@@ -418,7 +418,7 @@
     },
     "digest": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "digest",
         "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions\n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx,\n Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,\n Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,\n and Winston Chang.",
@@ -444,7 +444,7 @@
     },
     "dplyr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "dplyr",
@@ -475,7 +475,7 @@
     },
     "ellipsis": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "ellipsis",
         "Version": "0.3.2",
@@ -501,7 +501,7 @@
     },
     "evaluate": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "evaluate",
         "Type": "Package",
@@ -528,7 +528,7 @@
     },
     "fansi": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fansi",
         "Title": "ANSI Control Sequence Aware String Functions",
@@ -556,7 +556,7 @@
     },
     "farver": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "farver",
@@ -583,7 +583,7 @@
     },
     "fastmap": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fastmap",
         "Title": "Fast Data Structures",
@@ -608,7 +608,7 @@
     },
     "filelock": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "filelock",
         "Title": "Portable File Locking",
@@ -632,7 +632,7 @@
     },
     "fontawesome": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "fontawesome",
@@ -661,7 +661,7 @@
     },
     "fs": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fs",
         "Title": "Cross-Platform File System Operations Based on 'libuv'",
@@ -692,7 +692,7 @@
     },
     "generics": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "generics",
         "Title": "Common S3 Generics not Provided by Base R Methods Related to\nModel Fitting",
@@ -720,7 +720,7 @@
     },
     "ggplot2": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "ggplot2",
         "Version": "3.4.0",
@@ -752,7 +752,7 @@
     },
     "glue": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
@@ -782,7 +782,7 @@
     },
     "gridExtra": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "gridExtra",
         "Authors@R": "c(person(\"Baptiste\", \"Auguie\",\n    email = \"baptiste.auguie@gmail.com\",\n    role = c(\"aut\", \"cre\")), person(\"Anton\", \"Antonov\",\n    email = \"tonytonov@gmail.com\",\n    role = c(\"ctb\")))",
@@ -807,7 +807,7 @@
     },
     "gtable": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "gtable",
         "Title": "Arrange 'Grobs' in Tables",
@@ -835,7 +835,7 @@
     },
     "highr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "highr",
         "Type": "Package",
@@ -863,7 +863,7 @@
     },
     "htmltools": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "htmltools",
         "Type": "Package",
@@ -893,7 +893,7 @@
     },
     "htmlwidgets": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "htmlwidgets",
         "Type": "Package",
@@ -921,7 +921,7 @@
     },
     "httpuv": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "httpuv",
         "Type": "Package",
@@ -951,7 +951,7 @@
     },
     "httr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "httr",
         "Title": "Tools for Working with URLs and HTTP",
@@ -979,7 +979,7 @@
     },
     "isoband": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "isoband",
         "Title": "Generate Isolines and Isobands from Regularly Spaced Elevation\nGrids",
@@ -1008,7 +1008,7 @@
     },
     "jquerylib": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jquerylib",
         "Title": "Obtain 'jQuery' as an HTML Dependency Object",
@@ -1032,7 +1032,7 @@
     },
     "jsonlite": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jsonlite",
         "Version": "1.8.4",
@@ -1058,7 +1058,7 @@
     },
     "knitr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "knitr",
         "Type": "Package",
@@ -1088,7 +1088,7 @@
     },
     "labeling": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "labeling",
         "Type": "Package",
@@ -1111,7 +1111,7 @@
     },
     "later": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "later",
         "Type": "Package",
@@ -1140,7 +1140,7 @@
     },
     "lattice": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lattice",
         "Version": "0.20-45",
@@ -1170,7 +1170,7 @@
     },
     "lazyeval": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lazyeval",
         "Version": "0.2.2",
@@ -1195,7 +1195,7 @@
     },
     "leaflet": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "leaflet",
         "Type": "Package",
@@ -1223,7 +1223,7 @@
     },
     "leaflet.providers": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "leaflet.providers",
         "Type": "Package",
@@ -1252,7 +1252,7 @@
     },
     "lifecycle": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lifecycle",
         "Title": "Manage the Life Cycle of your Package Functions",
@@ -1281,7 +1281,7 @@
     },
     "magrittr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "magrittr",
@@ -1310,7 +1310,7 @@
     },
     "markdown": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "markdown",
         "Type": "Package",
@@ -1338,7 +1338,7 @@
     },
     "memoise": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "memoise",
         "Title": "'Memoisation' of Functions",
@@ -1363,7 +1363,7 @@
     },
     "mgcv": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "mgcv",
         "Version": "1.8-38",
@@ -1388,7 +1388,7 @@
     },
     "mime": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "mime",
         "Type": "Package",
@@ -1413,7 +1413,7 @@
     },
     "munsell": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "munsell",
         "Type": "Package",
@@ -1437,7 +1437,7 @@
     },
     "nlme": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "nlme",
         "Version": "3.1-153",
@@ -1468,7 +1468,7 @@
     },
     "openssl": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "openssl",
         "Type": "Package",
@@ -1496,7 +1496,7 @@
     },
     "pillar": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pillar",
         "Title": "Coloured Formatting for Columns",
@@ -1528,7 +1528,7 @@
     },
     "pins": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "pins",
@@ -1557,7 +1557,7 @@
     },
     "pkgconfig": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pkgconfig",
         "Title": "Private Configuration for 'R' Packages",
@@ -1581,7 +1581,7 @@
     },
     "png": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "png",
         "Version": "0.1-7",
@@ -1603,7 +1603,7 @@
     },
     "promises": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "promises",
         "Type": "Package",
@@ -1633,7 +1633,7 @@
     },
     "rappdirs": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "rappdirs",
@@ -1661,7 +1661,7 @@
     },
     "raster": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "raster",
         "Type": "Package",
@@ -1690,7 +1690,7 @@
     },
     "rlang": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rlang",
         "Version": "1.0.6",
@@ -1722,7 +1722,7 @@
     },
     "rmarkdown": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "rmarkdown",
@@ -1752,7 +1752,7 @@
     },
     "sass": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "sass",
@@ -1781,7 +1781,7 @@
     },
     "scales": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "scales",
         "Title": "Scale Functions for Visualization",
@@ -1810,7 +1810,7 @@
     },
     "shiny": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "shiny",
         "Type": "Package",
@@ -1841,7 +1841,7 @@
     },
     "shinydashboard": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "shinydashboard",
         "Title": "Create Dashboards with 'Shiny'",
@@ -1866,7 +1866,7 @@
     },
     "sourcetools": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "sourcetools",
         "Type": "Package",
@@ -1891,7 +1891,7 @@
     },
     "sp": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "sp",
         "Version": "1.4-5",
@@ -1917,7 +1917,7 @@
     },
     "stringi": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringi",
         "Version": "1.7.8",
@@ -1945,7 +1945,7 @@
     },
     "stringr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringr",
         "Title": "Simple, Consistent Wrappers for Common String Operations",
@@ -1975,7 +1975,7 @@
     },
     "sys": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "sys",
         "Type": "Package",
@@ -2001,7 +2001,7 @@
     },
     "terra": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "terra",
         "Type": "Package",
@@ -2031,7 +2031,7 @@
     },
     "tibble": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "tibble",
         "Title": "Simple Data Frames",
@@ -2064,7 +2064,7 @@
     },
     "tidyselect": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "tidyselect",
         "Title": "Select from a Set of Strings",
@@ -2094,7 +2094,7 @@
     },
     "tinytex": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "tinytex",
         "Type": "Package",
@@ -2120,7 +2120,7 @@
     },
     "utf8": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "utf8",
         "Title": "Unicode Text Processing",
@@ -2146,7 +2146,7 @@
     },
     "vctrs": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "vctrs",
         "Title": "Vector Helpers",
@@ -2177,7 +2177,7 @@
     },
     "viridis": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "viridis",
         "Type": "Package",
@@ -2206,7 +2206,7 @@
     },
     "viridisLite": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "viridisLite",
         "Type": "Package",
@@ -2232,7 +2232,7 @@
     },
     "whisker": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "whisker",
         "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
@@ -2256,7 +2256,7 @@
     },
     "withr": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "withr",
         "Title": "Run Code 'With' Temporarily Modified Global State",
@@ -2286,7 +2286,7 @@
     },
     "xfun": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "xfun",
         "Type": "Package",
@@ -2313,7 +2313,7 @@
     },
     "xtable": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "xtable",
         "Version": "1.8-4",
@@ -2339,7 +2339,7 @@
     },
     "yaml": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "yaml",
         "Type": "Package",
@@ -2363,7 +2363,7 @@
     },
     "zip": {
       "Source": "REPO_NAME",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/bionic/latest",
+      "Repository": "https://p3m.dev/cran/__linux__/bionic/latest",
       "description": {
         "Package": "zip",
         "Title": "Cross-Platform 'zip' Compression",
